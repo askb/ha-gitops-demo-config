@@ -1,0 +1,43 @@
+# Secrets and credentials — never commit
+secrets.yaml
+secrets.yaml.*
+!secrets.yaml.example
+!secrets.yaml.sample
+!secrets.yaml.template
+!secrets.yaml.dist
+*.bak
+*.bak-*
+*.bak.*
+*.orig
+*.secret
+*.pem
+*.key
+*.token
+.google.token
+.git-credentials
+.cloud/
+.storage/
+zigbee2mqtt/secret.yaml
+
+# Runtime state, databases, logs
+*.db
+*.db-shm
+*.db-wal
+*.log
+*.log.*
+ip_bans.yaml
+known_devices.yaml
+home-assistant_v2.*
+OZW_Log.txt
+.uuid
+.ha_run.lock
+
+# This addon's runtime metadata (committing it creates a PR feedback loop)
+.gitops_backup_status
+gitops_backup.log
+
+# Misc
+__pycache__/
+deps/
+tts/
+backups/
