@@ -17,3 +17,13 @@
     - service: light.turn_off
       target:
         entity_id: light.porch
+- id: meetup_demo
+  alias: Meetup demo — flash the lights
+  trigger:
+    - platform: state
+      entity_id: input_boolean.guest_mode
+      to: "on"
+  action:
+    - service: light.toggle
+      target:
+        entity_id: light.porch
