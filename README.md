@@ -1,0 +1,1 @@
+Demo repo for the ha-gitops talk. Reset before each rehearsal.
