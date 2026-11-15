@@ -1,0 +1,17 @@
+# Demo Home Assistant configuration — Brisbane Community Day 2026
+homeassistant:
+  name: Demo Home
+  unit_system: metric
+  time_zone: Australia/Brisbane
+  latitude: !secret home_latitude
+  longitude: !secret home_longitude
+
+default_config:
+
+automation: !include automations.yaml
+script: !include scripts.yaml
+
+input_boolean:
+  guest_mode:
+    name: Guest mode
+    icon: mdi:account-group
